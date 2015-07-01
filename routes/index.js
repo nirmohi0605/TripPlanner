@@ -17,8 +17,6 @@ router.get('/', function(req, res, next) {
                 "restaurants": restaurants
             }
             renderObj.title = "Travel Planner"
-            console.log(renderObj);
-            //res.json(renderObj);
             res.render('index', renderObj);
         });
 });
