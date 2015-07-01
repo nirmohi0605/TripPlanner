@@ -1,3 +1,8 @@
+{% extends "layout.html" %} {% block content %}
+<div id="map-canvas">
+    <p>Words
+    </p>
+</div>
 <div class="rightcolumn">
     <div class="checkbox">
         <p> Hotel! </p>
@@ -24,7 +29,8 @@
     </div>
     <div class="summarybox">
         <div class='day'>
-            <h1>Day2</h1></div>
+            <h1>Day2</h1>
+        </div>
         <div class="bottom-right-box">
             <nav class="navbar navbar-default summarynav">
                 <div class="container-fluid">
@@ -50,23 +56,21 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-            <div class="summary">
-                <h5>My Hotel</h2>
-                <p>Ritz Carlton</p>
-                </br>
-                <h5>My Restaurants</h2>
-                <p>The Capitol Grille</p>
-                </br>
-                <h5>My Things To Do</h2>
-                <ul>
-                    <li>Raquetball</li>
-                    <li>Hiking</li>
-                    <li>Going to Restaurant</li>
-                </ul>
-
-                </div>
-           </div>
-
+        </div>
+        <div class="summary">
+            <h5>My Hotel</h5>
+            <p>Ritz Carlton</p>
+            </br>
+            <h5>My Restaurants</h5>
+            <p>The Capitol Grille</p>
+            </br>
+            <h5>My Things To Do</h5>
+            <ul>
+                <li>Raquetball</li>
+                <li>Hiking</li>
+                <li>Going to Restaurant</li>
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}

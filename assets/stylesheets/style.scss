@@ -1,42 +1,52 @@
-.navbar{
-	margin-bottom: 0px;
+body {
+    box-sizing: border-box;
 }
-.rightcolumn{
-	padding-right: 10px;
-	width: 310px;
-	float: right;
-	.checkbox {
-		padding-top: 0;
-		top: 0;
-		border: 1px black solid;
-		background-color: tan;
-		border-radius: 5px;
-		select, option { 
-			margin-left: 5%;
-			width: 80%;
-		}
 
-	}
+#map-canvas {
+    width: 70%;
+    background-color: black;
+    float: left;
+    height: 1000px;
+    margin-top: 10px;
+}
 
+.navbar {
+    margin-bottom: 0px;
+}
 
-	.summarybox {
-		.summarynav{
-			border-radius: 5px;
-			border: 2px;
-			.container-fluid .navbar-collapse .navbar-nav{
-				padding-top: 12px;
-				li {
-					padding: 2px;
-					button{
-						display: inline-block;
-						border-radius: 100px;
-					}
-				}
-			}
-		}
-		clear:both;
-		.summary {
-			border: 1px black solid;
-		}
-	}
+.rightcolumn {
+    padding-right: 10px;
+    width: 30%;
+    float: right;
+    .checkbox {
+        padding-top: 0;
+        top: 0;
+        border: 1px black solid;
+        background-color: tan;
+        border-radius: 5px;
+        select, option {
+            margin-left: 5%;
+            width: 80%;
+        }
+    }
+    .summarybox {
+        .summarynav {
+            border-radius: 5px;
+            border: 2px;
+            .container-fluid .navbar-collapse .navbar-nav {
+                padding-top: 12px;
+                li {
+                    padding: 2px;
+                    button {
+                        display: inline-block;
+                        border-radius: 100px;
+                    }
+                }
+            }
+        }
+        clear:both;
+        .summary {
+            border: 1px black solid;
+        }
+    }
 }
