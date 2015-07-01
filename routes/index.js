@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require('express');
 var router = express.Router();
 var models = require('../models/');
@@ -25,5 +24,3 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
-=======
->>>>>>> d1fee11181cf552e0ef1ee768cbf6326a5f750a2
