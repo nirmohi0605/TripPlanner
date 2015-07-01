@@ -1,10 +1,49 @@
-.navbar-default {
-    background-color: #746254;
+.navbar {
+    margin-bottom: 0px;
 }
-/*.navbar-inverse .navbar-nav > li > a .navbar-inverse .navbar-brand {
-    color: black;
-}*/
 
-a {
-    color: black;
+.rightcolumn {
+    padding-right: 10px;
+    width: 310px;
+    float: right;
+}
+
+.rightcolumn .checkbox {
+    padding-top: 0;
+    top: 0;
+    border: 1px black solid;
+    background-color: tan;
+    border-radius: 5px;
+}
+
+.rightcolumn .checkbox select,
+.rightcolumn .checkbox option {
+    margin-left: 5%;
+    width: 80%;
+}
+
+.rightcolumn .summarybox {
+    clear: both;
+}
+
+.rightcolumn .summarybox .summarynav {
+    border-radius: 5px;
+    border: 2px;
+}
+
+.rightcolumn .summarybox .summarynav .container-fluid .navbar-collapse .navbar-nav {
+    padding-top: 12px;
+}
+
+.rightcolumn .summarybox .summarynav .container-fluid .navbar-collapse .navbar-nav li {
+    padding: 2px;
+}
+
+.rightcolumn .summarybox .summarynav .container-fluid .navbar-collapse .navbar-nav li button {
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.rightcolumn .summarybox .summary {
+    border: 1px black solid;
 }

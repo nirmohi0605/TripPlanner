@@ -1,24 +1,72 @@
-{% extends "layout.html" %} {% block content %}
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-<div class="test">
-    <p style="display: inline-block"> Hotel! </p>
-    <select class="hotels">
-        {% for hotel in hotels %}
-        <option value="{{hotel.name}}">{{hotel.name}}</option>
-        {% endfor %}
-    </select>
-    <p style="display: inline-block"> Restaurant! </p>
-    <select class="restaurant">
-        {% for restaurant in restaurants %}
-        <option value="{{restaurant.name}}">{{restaurant.name}}</option>
-        {% endfor %}
-    </select>
-    <p style="display: inline-block"> Things to Do! </p>
-    <select class="thingsToDo">
-        {% for thingToDo in thingsToDo %}
-        <option value="{{thingToDo.name}}">{{thingToDo.name}}</option>
-        {% endfor %}
-    </select>
+<div class="rightcolumn">
+    <div class="checkbox">
+        <p> Hotel! </p>
+        <select class="hotels">
+            {% for hotel in hotels %}
+            <option value="{{hotel.name}}">{{hotel.name}}</option>
+            {% endfor %}
+        </select>
+        <button style="button" value="+">+</button>
+        <p> Restaurant! </p>
+        <select class="restaurant">
+            {% for restaurant in restaurants %}
+            <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+            {% endfor %}
+        </select>
+        <button style="button" value="+">+</button>
+        <p> Things to Do! </p>
+        <select class="thingsToDo">
+            {% for thingToDo in thingsToDo %}
+            <option value="{{thingToDo.name}}">{{thingToDo.name}}</option>
+            {% endfor %}
+        </select>
+        <button style="button" value="+">+</button>
+    </div>
+    <div class="summarybox">
+        <div class='day'>
+            <h1>Day2</h1></div>
+        <div class="bottom-right-box">
+            <nav class="navbar navbar-default summarynav">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <button>1</button>
+                            </li>
+                            <li>
+                                <button>2</button>
+                            </li>
+                            <li>
+                                <button>3</button>
+                            </li>
+                            <li>
+                                <button>+</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <div class="summary">
+                <h5>My Hotel</h2>
+                <p>Ritz Carlton</p>
+                </br>
+                <h5>My Restaurants</h2>
+                <p>The Capitol Grille</p>
+                </br>
+                <h5>My Things To Do</h2>
+                <ul>
+                    <li>Raquetball</li>
+                    <li>Hiking</li>
+                    <li>Going to Restaurant</li>
+                </ul>
+
+                </div>
+           </div>
+
+    </div>
 </div>
 {% endblock %}
