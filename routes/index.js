@@ -9,18 +9,18 @@ router.get('/', function(req, res, next) {
         .catch(function(err) {
             console.log(err);
         })
-        .spread(function(hotel, ThingToDo, restaurant) {
+        .spread(function(hotels, thingsToDo, restaurants) {
             //res.json(data);
-            console.log("all done");
-            console.log(hotel);
-            console.log(ThingToDo);
-            console.log(restaurant);
+            var renderObj = {
+                "hotels": hotels,
+                "thingsToDo": thingsToDo,
+                "restaurants": restaurants
+            }
+            renderObj.title = "Travel Planner"
+            console.log(renderObj);
+            //res.json(renderObj);
+            res.render('index', renderObj);
         });
-    // .then(function(results) {
-    //     res.send(results[2]);
-    // })
-    //res.render('index', { title: 'Express' });
-
 });
 
 module.exports = router;
