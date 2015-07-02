@@ -5,7 +5,6 @@ body {
 
 .circle-btn {
   padding-left: 1px;
-  font-weight: bold;
   display: inline-block;
   padding-top: 1.4px;
   cursor: pointer;
@@ -16,6 +15,8 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 100%; }
+  .circle-btn:active {
+    color: black; }
 
 .navbar {
   border-radius: 0%;
@@ -43,10 +44,10 @@ body {
 .rightcolumn {
   padding-right: 10px;
   width: 30vw;
-  float: right; }
+  float: right;
+  background-color: #E0FEFF; }
   .rightcolumn .checkbox {
     top: 0;
-    background-color: #E0FEFF;
     border-radius: 5px; }
     .rightcolumn .checkbox select, .rightcolumn .checkbox option {
       margin-left: 5%;
@@ -57,7 +58,7 @@ body {
     clear: both; }
     .rightcolumn .summarybox .summary-nav-bar {
       z-index: 5;
-      border-radius: 5px;
+      border-radius: 5px 5px 0 0;
       border-bottom-width: 0px;
       height: 50px;
       background-color: #4F8487;
@@ -78,3 +79,5 @@ body {
       padding-left: 10%;
       z-index: 0;
       height: 276px; }
+      .rightcolumn .summarybox .summary .list-group div {
+        display: inline-block; }
