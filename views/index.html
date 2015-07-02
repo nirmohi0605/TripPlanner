@@ -7,21 +7,21 @@
 </div>
 <div class="rightcolumn">
     <div class="checkbox">
-        <h5> Hotel</h5>
+        <h5><u>Hotel</u></h5>
         <select class="hotels">
             {% for hotel in hotels %}
             <option value="{{hotel.name}}">{{hotel.name}}</option>
             {% endfor %}
         </select>
         <div class = "circle-btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></div>
-        <h5> Restaurant</h5>
+        <h5><u>Restaurant</u></h5>
         <select class="restaurant">
             {% for restaurant in restaurants %}
             <option value="{{restaurant.name}}">{{restaurant.name}}</option>
             {% endfor %}
         </select>
         <div class = "circle-btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></div>
-        <h5> Things to Do</h5>
+        <h5><u> Things to</u> Do</h5>
         <select class="thingsToDo">
             {% for thingToDo in thingsToDo %}
             <option value="{{thingToDo.name}}">{{thingToDo.name}}</option>
@@ -43,19 +43,19 @@
 	    </div>
         <div class="bottom-right-box">
         <div class="summary">
-            <h5>My Hotel</h5>
+            <h5><u>My Hotel</u></h5>
             <ul class = "list-group">
-                <div>Ritz Carlton</div> <div class = "circle-btn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                <div class = "li">Ritz Carlton</div> <div class = "circle-btn">x</span></div>
             </ul>
-             <h5>My Restaurants</h5>
+             <h5><u>My Restaurant</u></h5>
             <ul class = "list-group">
-                <div>The Capitol Grille</div> <div class = "circle-btn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                <div class = "li">The Capitol Grille</div> <div class = "circle-btn">x</span></div>
             </ul>
-            <h5>My Things To Do</h5>
+            <h5><u>My Things To Do </u></h5>
             <ul class = "list-group">
-                <div>Raquetball</div> <div class = "circle-btn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div></br>
-                <div>Hiking</div>   <div class = "circle-btn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div></br>
-                <div>Going to Restaurant</div>   <div class = "circle-btn"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div></br>
+                <div class = "li">Raquetball</div> <div class = "circle-btn">x</span></div></br>
+                <div class = "li">Hiking</div> <div class = "circle-btn">x</span></div></br>
+                <div class = "li">Going to Restaurant</div>   <div class = "circle-btn">x</span></div></br>
             </ul>
         </div>
         </div>

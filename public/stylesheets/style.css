@@ -1,22 +1,26 @@
 body {
   box-sizing: border-box;
   background-color: #E0FEFF;
-  font: Georgia; }
+  font-family: Georgia; }
+  body h5 {
+    font-style: italic; }
 
 .circle-btn {
+  font-style: italic;
   padding-left: 1px;
   display: inline-block;
-  padding-top: 1.4px;
+  padding-top: 3px;
   cursor: pointer;
   background-color: white;
   text-align: center;
   font-size: 10px;
-  border: 2px solid black;
+  border: 1px black solid;
   width: 20px;
   height: 20px;
-  border-radius: 100%; }
+  border-radius: 100%;
+  box-shadow: 0 1px 1px #174C52; }
   .circle-btn:active {
-    color: black; }
+    box-shadow: 0 0 0; }
 
 .navbar {
   border-radius: 0%;
@@ -71,7 +75,6 @@ body {
         list-style: none;
         display: inline-block; }
         .rightcolumn .summarybox .summary-nav-bar .summary-nav-list .nav-list-items .circle-btn {
-          padding-top: 3px;
           width: 30px;
           height: 30px;
           font-size: 14px; }
@@ -79,5 +82,12 @@ body {
       padding-left: 10%;
       z-index: 0;
       height: 276px; }
+      .rightcolumn .summarybox .summary .li {
+        font-size: 12px; }
       .rightcolumn .summarybox .summary .list-group div {
         display: inline-block; }
+        .rightcolumn .summarybox .summary .list-group div.circle-btn {
+          padding-top: 0px;
+          height: 15px;
+          width: 15px;
+          padding-right: 2px; }
