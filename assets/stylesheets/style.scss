@@ -1,12 +1,43 @@
 body {
     box-sizing: border-box;
+    background-color: #E0FEFF;
+    font: Georgia;
 }
 
+.circle-btn{
+    padding-left: 1px;
+    font-weight: bold;
+	display: inline-block;
+	padding-top: 1.4px;
+	cursor: pointer;
+	background-color: white;
+   	text-align: center;
+   	font-size: 10px;
+	border: 2px solid black;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+}
+
+.navbar {
+	border-radius: 0%;
+	padding: 0;
+	background-color: #4F8487;
+	border: 1px solid black;
+}
+.navbar-default .navbar-nav>li>a , .navbar-default .navbar-brand{
+    &:hover{
+        color: #E8A1CF;
+    }
+	color: #E0FEFF;
+}
 #map-canvas {
-    width: 70%;
+	margin-left: 10px;
+	border: 1px solid black;
+    width: 67vw;
     background-color: black;
     float: left;
-    height: 1000px;
+    height: 90vh;
     margin-top: 10px;
 }
 
@@ -16,13 +47,11 @@ body {
 
 .rightcolumn {
     padding-right: 10px;
-    width: 30%;
+    width: 30vw;
     float: right;
     .checkbox {
-        padding-top: 0;
         top: 0;
-        border: 1px black solid;
-        background-color: tan;
+        background-color: #E0FEFF;
         border-radius: 5px;
         select, option {
             margin-left: 5%;
@@ -30,23 +59,36 @@ body {
         }
     }
     .summarybox {
-        .summarynav {
-            border-radius: 5px;
-            border: 2px;
-            .container-fluid .navbar-collapse .navbar-nav {
-                padding-top: 12px;
-                li {
-                    padding: 2px;
-                    button {
-                        display: inline-block;
-                        border-radius: 100px;
-                    }
-                }
-            }
-        }
+    	padding-top: 20px;
+    	border-radius: 5px;
+     	.summary-nav-bar{
+     		z-index: 5;
+     		border-radius: 5px;
+     		border-bottom-width: 0px;
+     		height: 50px;
+     		background-color: #4F8487;
+     		width: 100%;
+     		.summary-nav-list{
+     			padding-left: 5px;
+     		}
+     		.summary-nav-list .nav-list-items{
+     			.circle-btn{
+     				padding-top: 3px;
+     				width: 30px;
+     				height: 30px;
+     				font-size: 14px;
+     			}
+     			padding-top: 10px;
+     			padding-right: 5px;
+     			list-style: none;
+     			display: inline-block;
+     		}
+     	}
         clear:both;
         .summary {
-            border: 1px black solid;
+        	padding-left: 10%;
+        	z-index:0;
+            height: 276px;
         }
     }
 }
